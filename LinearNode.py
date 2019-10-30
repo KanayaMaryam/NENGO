@@ -8,6 +8,12 @@ from nengo.utils.ensemble import tuning_curves
 from nengo.utils.ipython import hide_input
 from nengo.utils.matplotlib import rasterplot
 
+"""
+Notes: 
+In this code, we create a simple input node. The Node takes in 
+a lambda t value, representing time, and produces an output 
+proportional to time. We can graph this input node over the course of a second. 
+"""
 
 def aligned(n_neurons, radius=0.9):
     intercepts = np.linspace(-radius, radius, n_neurons)
@@ -30,3 +36,10 @@ plt.xlabel("Time (s)")
 plt.xlim(0, 1)
 plt.show()
 hide_input()
+
+"""
+Notes: 
+In this code, we create a simple input node. The Node takes in 
+a lambda t value, representing time, and produces an output 
+proportional to time. We can graph this input node over the course of a second. 
+"""
